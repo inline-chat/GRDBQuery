@@ -15,7 +15,8 @@ extension AnyDatabaseReader: TopLevelDatabaseReader { }
 extension DatabaseQueue: TopLevelDatabaseReader { }
 extension DatabasePool: TopLevelDatabaseReader { }
 extension DatabaseSnapshot: TopLevelDatabaseReader { }
-extension DatabaseSnapshotPool: TopLevelDatabaseReader { }
+// Note(mo): Don't know why this doesn't compile
+// extension DatabaseSnapshotPool: TopLevelDatabaseReader { }
 
 extension DatabaseReader {
     // Workaround compiler that won't open the TopLevelDatabaseReader.reader
